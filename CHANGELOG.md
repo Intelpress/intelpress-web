@@ -9,10 +9,20 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 ## [Unreleased] - Fase 2: Motor de Analítica en R
 
 ### Por Hacer
-- Crear script `scripts/analytics_engine.R` para la ingesta y parseo del CSV del motor E/clip.
-- Implementar función de cálculo de Share of Voice (SoV) por medio y taxonomía.
-- Configurar paleta de colores oficial de Intelpress (`#0d1117`, `#161b22`, `#a371f7`) en visualizaciones vectoriales con `ggplot2`.
-- Integrar módulo de análisis de encuadre mediático (*framing*) y co-ocurrencia semántica.
+- Implementar módulo de análisis de encuadre mediático (*framing*) y co-ocurrencia semántica por taxonomía.
+- Crear script CLI ejecutable en R para consumo automatizado desde Bash (`Rscript scripts/run_pipeline.R`).
+- Integrar exportación de métricas en formato JSON para consumo desde el frontend.
+
+---
+
+## [0.2.0] - 2026-09-13 - Fase 2: Motor de Analítica Base
+
+### Añadido
+- Creación de `scripts/analytics_engine.R` con soporte para tidyverse y lubridate.
+- Implementación de `cargar_datos_prensa()` con validación estricta de tipos y manejo explícito de `NA`.
+- Cálculo de métricas cuantitativas: Share of Voice (SoV) por medio y distribución por taxonomía.
+- Tema visual personalizado `tema_intelpress()` para `ggplot2` bajo la paleta institucional (`#0d1117`, `#161b22`, `#a371f7`).
+- Función de generación y exportación de gráficos de prensa en formato PNG de alta resolución.
 
 ---
 
