@@ -1,38 +1,21 @@
-# Changelog — Intelpress Web
+# Changelog — Intelpress
 
-Todas las modificaciones notables de este proyecto serán documentadas en este archivo.
-El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Todas las notas notables de cambios y decisiones de arquitectura en este proyecto serán documentadas en este archivo.
 
----
+## [0.2.0-framing] - 2026-09-13
 
-## [Unreleased] - Fase 2: Motor de Analítica en R
-
-### Por Hacer
-- Implementar módulo de análisis de encuadre mediático (*framing*) y co-ocurrencia semántica por taxonomía.
-- Crear script CLI ejecutable en R para consumo automatizado desde Bash (`Rscript scripts/run_pipeline.R`).
-- Integrar exportación de métricas en formato JSON para consumo desde el frontend.
-
----
-
-## [0.2.0] - 2026-09-13 - Fase 2: Motor de Analítica Base
+### Decisiones de Arquitectura & Thinking Process
+* **Pivote Estratégico de Interfaz:** Se descartó el desarrollo de un Dashboard UI tradicional en favor de un enfoque **Push Intelligence / Executive Newsletter B2B** (inspirado en la arquitectura de valor de Ground News).
+* **Racionalidad:** El valor ejecutivo de Media Intelligence reside en la entrega sintética y directa en la bandeja de entrada o consola del cliente, combinando curaduría por sector + datos duros (SoV) + análisis de encuadre semántico (*Framing Analytics*).
 
 ### Añadido
-- Creación de `scripts/analytics_engine.R` con soporte para tidyverse y lubridate.
-- Implementación de `cargar_datos_prensa()` con validación estricta de tipos y manejo explícito de `NA`.
-- Cálculo de métricas cuantitativas: Share of Voice (SoV) por medio y distribución por taxonomía.
-- Tema visual personalizado `tema_intelpress()` para `ggplot2` bajo la paleta institucional (`#0d1117`, `#161b22`, `#a371f7`).
-- Función de generación y exportación de gráficos de prensa en formato PNG de alta resolución.
+* **Framing Analytics en `scripts/analytics_engine.R`:**
+  * `obtener_stopwords_es()`: Diccionario extendido de stop-words en español para minería de texto.
+  * `extraer_terminos_framing()`: Extracción de n-gramas y términos clave por relevancia.
+  * `extraer_coocurrencia_taxonomia()`: Análisis de co-ocurrencia semántica por sector o taxonomía de cliente.
+* **Documentación:** Actualización de `README.md` reflejando la arquitectura de 3 niveles de boletines de inteligencia.
 
----
-
-## [0.1.0] - 2026-09-13 - Fase 1: Arquitectura y Contrato de Datos
-
+## [0.2.0] - 2026-09-13
 ### Añadido
-- Inicialización del repositorio Git en `~/Intelpress/Intelpress-web/` con rama principal `main`.
-- Creación de landing page base minimalista en `index.html`.
-- Creación de `.gitignore` para excluir entornos virtuales, archivos temporales y datos sensibles.
-- Inspección completa del historial de datos del motor E/clip (`rtfs_entrenamiento_procesado.csv` y `tags_eclip.txt`).
-- Definición formal del **Contrato de Datos Oficial** para la ingesta de metadatos en R.
-- Documentación de la taxonomía jerárquica de 3 niveles (Macro Grupos, Bloques/Clientes y Temáticas).
-- Creación de la estructura de directorios (`scripts/`).
+* `scripts/analytics_engine.R`: Ingesta robusta de CSV, parsing de fechas, cálculo de Share of Voice (SoV) por medio y por taxonomía, y función de exportación de gráficos con `tema_intelpress()`.
+* `.gitignore`: Regla para ignorar artefactos visuales temporales (`*.png`).
