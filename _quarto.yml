@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - archive.qmd
+
+website:
+  title: "INTELPRESS :: Executive Briefings"
+  navbar:
+    background: dark
+    search: true
+    left:
+      - href: index.qmd
+        text: "Briefing Principal"
+      - href: archive.qmd
+        text: "Archivo Histórico"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-fold: true
+    embed-resources: false

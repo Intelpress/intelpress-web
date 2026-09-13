@@ -22,11 +22,19 @@ if (!file.exists(json_path)) {
 
 data <- jsonlite::fromJSON(json_path)
 
-# Extracción segura de métricas
-fecha_str     <- ifelse(!is.null(data$metadata$fecha), data$metadata$fecha, format(Sys.Date(), "%Y-%m-%d"))
-total_notas   <- ifelse(!is.null(data$resumen$total_menciones), data$resumen$total_menciones, 0)
-top_medio     <- ifelse(!is.null(data$resumen$top_medio), data$resumen$top_medio, "N/A")
-pct_top_medio <- ifelse(!is.null(data$resumen$pct_top_medio), data$resumen$pct_top_medio, 0)
+# Extracción segura de métricas desde el JSON del motor de analítica
+fecha_str     <- ifelse(!is.null(data$metadata$fecha_ejecucion), substr(data$metadata$fecha_ejecucion, 1, 10), format(Sys.Date(), "%Y-%m-%d"))
+total_notas   <- ifelse(!is.null(data$metadata$total_notas), data$metadata$total_notas, 0)
+
+# Obtener medio principal del share of voice si existe
+sov_df <- data$share_of_voice
+if (!is.null(sov_df) && nrow(sov_df) > 0) {
+  top_medio     <- sov_df$medio[1]
+  pct_top_medio <- sov_df$porcentaje[1]
+} else {
+  top_medio     <- "N/A"
+  pct_top_medio <- 0.0
+}
 
 md <- c()
 
@@ -48,10 +56,10 @@ md <- c(md, "## 📈 Desglose por Medio Principal\n")
 md <- c(md, "| Medio | Volumen | Cobertura |")
 md <- c(md, "| :--- | :---: | :---: |")
 
-if (!is.null(data$tabla_sov) && nrow(data$tabla_sov) > 0) {
-  for (i in 1:min(5, nrow(data$tabla_sov))) {
-    m_row <- data$tabla_sov[i, ]
-    md <- c(md, sprintf("| **%s** | %d | %.1f%% |", m_row$medio, m_row$volumen, m_row$porcentaje))
+if (!is.null(sov_df) && nrow(sov_df) > 0) {
+  for (i in 1:min(5, nrow(sov_df))) {
+    m_row <- sov_df[i, ]
+    md <- c(md, sprintf("| **%s** | %d | %.1f%% |", m_row$medio, m_row$total_notas, m_row$porcentaje))
   }
 } else {
   md <- c(md, "| Sin datos | 0 | 0.0% |")

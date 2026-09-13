@@ -2,27 +2,28 @@
 
 Todas las notas notables de cambios y decisiones de arquitectura en este proyecto serán documentadas en este archivo.
 
-## [0.3.0] - 2026-09-13 - Fase 3: Executive Briefing Builder & CLI Orchestration
+## [0.4.0] - 2026-09-13 - Fase 4: Multiformat Export & CLI Automation
 
 ### Decisiones de Arquitectura & Thinking Process
-* **Renderizado Decoplado:** El motor de generación de reportes (`scripts/build_newsletter.R`) funciona de manera independiente al backend analítico, consumiendo directamente la especificación en `metricas_intelpress.json`.
-* **Formato Agnóstico:** Se utiliza Markdown puro renderizado mediante `knitr::kable()` para permitir la salida directa en consola CLI, correo electrónico o conversión hacia HTML/PDF mediante Pandoc o Quarto.
+* **Independencia de Interfaz:** Separación estricta entre el motor industrial agnóstico (**Intelpress Engine**) y las capas relacionales o de consulta personalizada para clientes (**SOMA**).
+* **Versatilidad Visual:** Soporte nativo de renderizado mediante Pandoc para hojas de estilo diferenciadas (`templates/style_dark.css` y `templates/style_light.css`), eliminando barreras de contraste para lectura diurna, nocturna o impresión.
+* **Distribución Push Móvil:** Generación automatizada de capturas PNG de alta resolución mediante navegadores headless (`brave-browser`), facilitando el compartimiento directo en plataformas de mensajería (WhatsApp/Telegram).
 
 ### Añadido
-* `templates/executive_briefing.md`: Plantilla base en Markdown estructurada bajo el modelo de entrega en 3 niveles (Curaduría, SoV y Framing Analytics).
-* `scripts/build_newsletter.R`: Script en R encargado de inyectar los datos estructurados en la plantilla y formatear tablas en Markdown.
-* `run_all.sh`: Script ejecutable máster en Bash que orquesta la analítica en R y la compilación del informe final con marcas de tiempo (*timestamps*).
+* `templates/style_dark.css`: Hoja de estilo en modo oscuro basada en paleta ejecutiva CLI.
+* `templates/style_light.css`: Hoja de estilo en modo claro optimizada para lectura tradicional e impresión.
+* `run_all.sh`: Integración de compilación multiformato (MD, HTML Dark/Light, PNG) con marcas de tiempo deterministas.
+
+---
+
+## [0.3.0] - 2026-09-13 - Fase 3: Executive Briefing Builder & CLI Orchestration
+### Añadido
+* `templates/executive_briefing.md`: Plantilla base en Markdown estructurada en 3 niveles (Curaduría, SoV y Framing).
+* `scripts/build_newsletter.R`: Motor de ensamblado e inyección de datos estructurados desde JSON a tablas Markdown.
 
 ---
 
 ## [0.2.0-framing] - 2026-09-13 - Fase 2: Backend Analytics Engine & CLI Pipeline
 ### Añadido
-* `scripts/analytics_engine.R`: Soporte multilingüe en `obtener_stopwords_multilingue()`, extracción de términos de encuadre (`extraer_terminos_framing()`) y co-ocurrencia por taxonomía (`extraer_coocurrencia_taxonomia()`).
-* `scripts/run_pipeline.R`: Script CLI ejecutable para automatización de la analítica cuantitativa/cualitativa y exportación de `metricas_intelpress.json` y `sov_medios.png`.
-
----
-
-## [0.2.0] - 2026-09-13
-### Añadido
-* `scripts/analytics_engine.R`: Ingesta robusta de CSV, parsing de fechas, cálculo de Share of Voice (SoV) y exportación de gráficos con `tema_intelpress()`.
-* `.gitignore`: Regla para ignorar artefactos visuales temporales (`*.png`).
+* `scripts/analytics_engine.R`: Analítica de encuadre semántico multilingüe y co-ocurrencia por taxonomía.
+* `scripts/run_pipeline.R`: Script CLI para extracción determinista de métricas JSON y gráficos SoV.

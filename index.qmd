@@ -1,0 +1,26 @@
+---
+title: "◆ INTELPRESS :: Executive Briefing"
+date: "2026-09-13"
+lang: es
+---
+
+## 📊 Métricas Clave de la Jornada
+
+* **Menciones Totales:** 90
+* **Medio Principal:** `portalportuario.cl` (17.8% Share of Voice)
+* **Estado de Procesamiento:** 100% Automatizado / Quarto Engine
+
+## 🚨 Alerta de Framing Estratégico
+
+Monitoreo automatizado finalizado para la jornada actual. La cobertura se mantiene liderada por los principales actores del sector portuario y logístico nacional.
+
+## 📈 Distribución de Share of Voice
+
+![Share of Voice por Medio](plots/sov.png){width=80%}
+
+| Medio | Volumen | Cobertura |
+| :--- | :--- | :--- |
+| portalportuario.cl | 16 | 17.8% |
+| mundomaritimo.cl | 14 | 15.6% |
+| reporteminero.cl | 13 | 14.4% |
+
