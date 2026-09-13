@@ -2,33 +2,27 @@
 
 Todas las notas notables de cambios y decisiones de arquitectura en este proyecto serán documentadas en este archivo.
 
-## [Unreleased] - Fase 3: Newsletter & Briefing Builder
+## [0.3.0] - 2026-09-13 - Fase 3: Executive Briefing Builder & CLI Orchestration
 
-### Por Hacer
-- Crear motor de plantillas para newsletters ejecutivas en Markdown/Quarto.
-- Implementar script CLI de renderizado y ensamblado del boletín B2B.
-- Integrar la inserción dinámica de métricas JSON y gráficos SoV en las plantillas.
+### Decisiones de Arquitectura & Thinking Process
+* **Renderizado Decoplado:** El motor de generación de reportes (`scripts/build_newsletter.R`) funciona de manera independiente al backend analítico, consumiendo directamente la especificación en `metricas_intelpress.json`.
+* **Formato Agnóstico:** Se utiliza Markdown puro renderizado mediante `knitr::kable()` para permitir la salida directa en consola CLI, correo electrónico o conversión hacia HTML/PDF mediante Pandoc o Quarto.
+
+### Añadido
+* `templates/executive_briefing.md`: Plantilla base en Markdown estructurada bajo el modelo de entrega en 3 niveles (Curaduría, SoV y Framing Analytics).
+* `scripts/build_newsletter.R`: Script en R encargado de inyectar los datos estructurados en la plantilla y formatear tablas en Markdown.
+* `run_all.sh`: Script ejecutable máster en Bash que orquesta la analítica en R y la compilación del informe final con marcas de tiempo (*timestamps*).
 
 ---
 
 ## [0.2.0-framing] - 2026-09-13 - Fase 2: Backend Analytics Engine & CLI Pipeline
-
-### Decisiones de Arquitectura & Thinking Process
-* **Pivote Estratégico de Interfaz:** Se descartó el desarrollo de un Dashboard UI tradicional en favor de un enfoque **Push Intelligence / Executive Newsletter B2B** (inspirado en la arquitectura de valor de Ground News).
-* **Racionalidad:** El valor ejecutivo de Media Intelligence reside en la entrega sintética y directa en la bandeja de entrada o consola del cliente, combinando curaduría por sector + datos duros (SoV) + análisis de encuadre semántico (*Framing Analytics*).
-
 ### Añadido
-* `scripts/analytics_engine.R`:
-  * Soporte multilingüe en `obtener_stopwords_multilingue()` para filtrado de ruido en español e inglés.
-  * Extracción de términos de encuadre semántico (`extraer_terminos_framing()`).
-  * Análisis de co-ocurrencia semántica por taxonomía/cliente (`extraer_coocurrencia_taxonomia()`).
-* `scripts/run_pipeline.R`:
-  * Script CLI ejecutable para automatización de punta a punta.
-  * Ingesta, cálculo de SoV, extracción de encuadre y exportación de `metricas_intelpress.json` y `sov_medios.png`.
+* `scripts/analytics_engine.R`: Soporte multilingüe en `obtener_stopwords_multilingue()`, extracción de términos de encuadre (`extraer_terminos_framing()`) y co-ocurrencia por taxonomía (`extraer_coocurrencia_taxonomia()`).
+* `scripts/run_pipeline.R`: Script CLI ejecutable para automatización de la analítica cuantitativa/cualitativa y exportación de `metricas_intelpress.json` y `sov_medios.png`.
 
 ---
 
 ## [0.2.0] - 2026-09-13
 ### Añadido
-* `scripts/analytics_engine.R`: Ingesta robusta de CSV, parsing de fechas, cálculo de Share of Voice (SoV) por medio y por taxonomía, y función de exportación de gráficos con `tema_intelpress()`.
+* `scripts/analytics_engine.R`: Ingesta robusta de CSV, parsing de fechas, cálculo de Share of Voice (SoV) y exportación de gráficos con `tema_intelpress()`.
 * `.gitignore`: Regla para ignorar artefactos visuales temporales (`*.png`).
