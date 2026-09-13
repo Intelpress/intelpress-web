@@ -1,66 +1,68 @@
 #!/usr/bin/env Rscript
 # ==============================================================================
-# Intelpress — Newsletter & Executive Briefing Builder (Fase 3)
-# Uso: Rscript scripts/build_newsletter.R <ruta_json> <ruta_plantilla> <ruta_salida>
+# INTELPRESS — Executive Briefing Markdown Builder (Clean Markdown)
+# Uso: Rscript scripts/build_newsletter.R <metrics.json> <output.md>
 # ==============================================================================
 
 suppressPackageStartupMessages({
   library(jsonlite)
-  library(tidyverse)
-  library(knitr)
 })
 
 args <- commandArgs(trailingOnly = TRUE)
-
-if (length(args) < 3) {
-  cat("Error: Argumentos insuficientes.\n")
-  cat("Uso: Rscript scripts/build_newsletter.R <ruta_json> <ruta_plantilla> <ruta_salida>\n")
-  quit(status = 1)
+if (length(args) < 2) {
+  stop("Uso correcto: Rscript scripts/build_newsletter.R <metrics.json> <output.md>")
 }
 
-ruta_json <- args[1]
-ruta_plantilla <- args[2]
-ruta_salida <- args[3]
+json_path <- args[1]
+output_md <- args[2]
 
-if (!file.exists(ruta_json)) stop(paste("No existe el archivo JSON:", ruta_json))
-if (!file.exists(ruta_plantilla)) stop(paste("No existe la plantilla:", ruta_plantilla))
+if (!file.exists(json_path)) {
+  stop(paste("Error: El archivo JSON no existe:", json_path))
+}
 
-# 1. Cargar Datos y Métricas
-datos <- read_json(ruta_json, simplifyVector = TRUE)
-plantilla <- readLines(ruta_plantilla, warn = FALSE) %>% paste(collapse = "\n")
+data <- jsonlite::fromJSON(json_path)
 
-# 2. Formatear Tablas Markdown
-tabla_taxonomia <- datos$distribucion_taxonomia %>%
-  rename(Taxonomía = taxonomia, `Total Notas` = total_notas, `% Cobertura` = porcentaje) %>%
-  kable(format = "markdown") %>%
-  paste(collapse = "\n")
+# Extracción segura de métricas
+fecha_str     <- ifelse(!is.null(data$metadata$fecha), data$metadata$fecha, format(Sys.Date(), "%Y-%m-%d"))
+total_notas   <- ifelse(!is.null(data$resumen$total_menciones), data$resumen$total_menciones, 0)
+top_medio     <- ifelse(!is.null(data$resumen$top_medio), data$resumen$top_medio, "N/A")
+pct_top_medio <- ifelse(!is.null(data$resumen$pct_top_medio), data$resumen$pct_top_medio, 0)
 
-tabla_sov <- datos$share_of_voice %>%
-  head(10) %>%
-  rename(Medio = medio, `Total Notas` = total_notas, `% SoV` = porcentaje) %>%
-  kable(format = "markdown") %>%
-  paste(collapse = "\n")
+md <- c()
 
-tabla_framing_terms <- datos$framing_terminos %>%
-  rename(Concepto = word, Frecuencia = frecuencia) %>%
-  kable(format = "markdown") %>%
-  paste(collapse = "\n")
+# Cabecera limpia en Markdown
+md <- c(md, sprintf("# ◆ INTELPRESS :: Reporte Ejecutivo de Prensa"))
+md <- c(md, sprintf("*Fecha de Emisión: %s | Cobertura: Chile*\n", fecha_str))
 
-tabla_framing_cooc <- datos$framing_coocurrencia %>%
-  rename(Taxonomía = taxonomia, Término = word, Frecuencia = frecuencia) %>%
-  kable(format = "markdown") %>%
-  paste(collapse = "\n")
+md <- c(md, "---")
+md <- c(md, "## 📊 Métricas Clave de la Jornada\n")
+md <- c(md, sprintf("- **Menciones Totales:** %s", format(total_notas, big.mark = ",")))
+md <- c(md, sprintf("- **Medio Principal:** %s (%.1f%% Share of Voice)", top_medio, pct_top_medio))
+md <- c(md, "- **Estado de Procesamiento:** 100% Automatizado / Sovereign CLI\n")
 
-# 3. Inyección de Variables en Plantilla
-briefing_renderizado <- plantilla %>%
-  str_replace_all("\\{\\{FECHA_EJECUCION\\}\\}", datos$metadata$fecha_ejecucion) %>%
-  str_replace_all("\\{\\{TOTAL_NOTAS\\}\\}", as.character(datos$metadata$total_notas)) %>%
-  str_replace_all("\\{\\{FUENTE_CSV\\}\\}", datos$metadata$fuente_csv) %>%
-  str_replace_all("\\{\\{TABLA_TAXONOMIA\\}\\}", tabla_taxonomia) %>%
-  str_replace_all("\\{\\{TABLA_SOV\\}\\}", tabla_sov) %>%
-  str_replace_all("\\{\\{TABLA_FRAMING_TERMINOS\\}\\}", tabla_framing_terms) %>%
-  str_replace_all("\\{\\{TABLA_FRAMING_COOCURRENCIA\\}\\}", tabla_framing_cooc)
+md <- c(md, "## 🚨 Alerta de Framing Estratégico\n")
+md <- c(md, sprintf("> Monitoreo automatizado finalizado para la jornada **%s**. La cobertura se mantiene liderada por **%s**, concentrando el **%.1f%%** del Share of Voice total.", fecha_str, top_medio, pct_top_medio))
+md <- c(md, "\n")
 
-# 4. Exportar Briefing Final
-writeLines(briefing_renderizado, con = ruta_salida)
-cat(sprintf("-> Executive Briefing generado exitosamente en: %s\n", ruta_salida))
+md <- c(md, "## 📈 Desglose por Medio Principal\n")
+md <- c(md, "| Medio | Volumen | Cobertura |")
+md <- c(md, "| :--- | :---: | :---: |")
+
+if (!is.null(data$tabla_sov) && nrow(data$tabla_sov) > 0) {
+  for (i in 1:min(5, nrow(data$tabla_sov))) {
+    m_row <- data$tabla_sov[i, ]
+    md <- c(md, sprintf("| **%s** | %d | %.1f%% |", m_row$medio, m_row$volumen, m_row$porcentaje))
+  }
+} else {
+  md <- c(md, "| Sin datos | 0 | 0.0% |")
+}
+
+md <- c(md, "\n")
+
+if (file.exists("sov_medios.png")) {
+  md <- c(md, "## 🎨 Distribución de Share of Voice\n")
+  md <- c(md, "![Share of Voice por Medio](./sov_medios.png)\n")
+}
+
+writeLines(md, output_md)
+cat(paste("-> Executive Briefing generado exitosamente en:", output_md, "\n"))
