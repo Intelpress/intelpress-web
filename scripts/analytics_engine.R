@@ -1,14 +1,15 @@
 # ==============================================================================
-# Intelpress — Engine de Analitica & Media Intelligence
-# Modulo: Engine Backend (Fase 2)
+# Intelpress — Engine de Analítica & Media Intelligence
+# Módulo: Engine Backend & Framing Analytics (Fase 2)
 # ==============================================================================
 
 suppressPackageStartupMessages({
   library(tidyverse)
   library(lubridate)
+  library(tidytext)
 })
 
-# 1. Ingesta y Validacion de Datos
+# 1. Ingesta y Validación de Datos
 # ------------------------------------------------------------------------------
 cargar_datos_prensa <- function(ruta_csv) {
   if (!file.exists(ruta_csv)) {
@@ -33,37 +34,82 @@ cargar_datos_prensa <- function(ruta_csv) {
     show_col_types = FALSE
   )
   
-  # Tratamiento explicito de valores NA y parseo de fechas ISO 8601
   df_clean <- df %>%
     mutate(
       fecha_parsed = suppressWarnings(ymd_hms(fecha)),
       medio = coalesce(medio, "Desconocido"),
       taxonomia = coalesce(taxonomia, "SIN_TAXONOMIA"),
       titulo = coalesce(titulo, ""),
-      bajada = coalesce(bajada, "")
+      bajada = coalesce(bajada, ""),
+      cuerpo_completo = coalesce(cuerpo_completo, "")
     ) %>%
     filter(status_scraping == "OK" | is.na(status_scraping))
   
   return(df_clean)
 }
 
-# 2. Metricas: Share of Voice (SoV) por Medio
+# 2. Métricas: Share of Voice (SoV) por Medio
 # ------------------------------------------------------------------------------
 calcular_sov_medios <- function(df) {
   df %>%
     count(medio, sort = TRUE, name = "total_notas") %>%
-    mutate(porcentaje = (total_notas / sum(total_notas)) * 100)
+    mutate(porcentaje = round((total_notas / sum(total_notas)) * 100, 2))
 }
 
-# 3. Metricas: Distribucion por Taxonomia (Bloques/Clientes)
+# 3. Métricas: Distribución por Taxonomía (Bloques/Clientes)
 # ------------------------------------------------------------------------------
 calcular_distribucion_taxonomia <- function(df) {
   df %>%
     count(taxonomia, sort = TRUE, name = "total_notas") %>%
-    mutate(porcentaje = (total_notas / sum(total_notas)) * 100)
+    mutate(porcentaje = round((total_notas / sum(total_notas)) * 100, 2))
 }
 
-# 4. Visualizacion: Tema Oficial Intelpress (ggplot2)
+# 4. Encuadre Semántico (Framing): Minería de Términos Clave y Co-ocurrencias
+# ------------------------------------------------------------------------------
+obtener_stopwords_multilingue <- function() {
+  sw_es <- stopwords::stopwords("es", source = "snowball")
+  sw_en <- stopwords::stopwords("en", source = "snowball")
+  
+  stopwords_custom <- c(
+    sw_es, sw_en,
+    "más", "tras", "según", "así", "además", "sobre", 
+    "chile", "dijo", "hacer", "año", "años", "nacional", "gran", "dos",
+    "tres", "primer", "primera", "través", "forma", "parte", "ambos"
+  )
+  tibble(word = unique(stopwords_custom))
+}
+
+extraer_terminos_framing <- function(df, top_n = 20) {
+  sw <- obtener_stopwords_multilingue()
+  
+  df %>%
+    select(id, taxonomia, titulo, bajada) %>%
+    unite("texto_completo", titulo, bajada, sep = " ") %>%
+    unnest_tokens(word, texto_completo) %>%
+    mutate(word = str_trim(word)) %>%
+    filter(str_detect(word, "^[a-záéíóúñ]{3,}$")) %>%
+    anti_join(sw, by = "word") %>%
+    count(word, sort = TRUE, name = "frecuencia") %>%
+    slice_head(n = top_n)
+}
+
+extraer_coocurrencia_taxonomia <- function(df, top_n_palabras = 5) {
+  sw <- obtener_stopwords_multilingue()
+  
+  df %>%
+    select(id, taxonomia, titulo, bajada) %>%
+    unite("texto_completo", titulo, bajada, sep = " ") %>%
+    unnest_tokens(word, texto_completo) %>%
+    mutate(word = str_trim(word)) %>%
+    filter(str_detect(word, "^[a-záéíóúñ]{3,}$")) %>%
+    anti_join(sw, by = "word") %>%
+    group_by(taxonomia) %>%
+    count(word, sort = TRUE, name = "frecuencia") %>%
+    slice_head(n = top_n_palabras) %>%
+    ungroup()
+}
+
+# 5. Tema Oficial Intelpress (ggplot2)
 # ------------------------------------------------------------------------------
 tema_intelpress <- function() {
   theme_minimal() +
@@ -80,7 +126,7 @@ tema_intelpress <- function() {
     )
 }
 
-# 5. Generacion de Grafico Vectorial de Share of Voice
+# 6. Generación de Gráfico Vectorial SoV
 # ------------------------------------------------------------------------------
 generar_grafico_sov <- function(df_sov, ruta_salida = "sov_medios.png") {
   p <- ggplot(df_sov, aes(x = reorder(medio, total_notas), y = total_notas)) +
