@@ -1,0 +1,21 @@
+---
+title: "Briefing Ejecutivo de Prueba - CLAP 2026"
+date: "2026-03-25"
+description: "Informe demostrativo sobre cobertura de prensa y análisis de sentimiento sectorial."
+format:
+  html:
+    toc: true
+---
+
+## Resumen Ejecutivo
+
+Análisis demostrativo de cobertura mediática procesado por el motor de **Intelpress**.
+
+### Métricas Clave
+- **Total Impactos:** 42 menciones
+- **Share of Voice Líder:** Prensa Agrícola (35%)
+- **Tono Predominante:** Neutral/Positivo (88%)
+
+::: {.callout-note}
+Este es un reporte indexado automáticamente por el motor de Quarto desde `output/reports/`.
+:::

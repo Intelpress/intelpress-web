@@ -2,24 +2,27 @@ project:
   type: website
   output-dir: docs
   render:
-    - index.qmd
-    - archive.qmd
+    - "*.qmd"
+    - "!distribution/"
 
 website:
-  title: "INTELPRESS :: Executive Briefings"
+  title: "Intelpress"
+  site-url: "https://intelpress.cl"
+  description: "Media Intelligence & Data Sovereignty"
   navbar:
-    background: dark
+    background: "#16161e"
     search: true
     left:
       - href: index.qmd
-        text: "Briefing Principal"
+        text: "Inicio"
       - href: archive.qmd
-        text: "Archivo Histórico"
+        text: "Archivo"
 
 format:
   html:
-    theme: cosmo
+    theme: none
     css: styles.css
     toc: true
-    code-fold: true
-    embed-resources: false
+    toc-depth: 3
+    code-fold: false
+    smooth-scroll: true

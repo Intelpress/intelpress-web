@@ -1,0 +1,1800 @@
+{
+  "metadata": {
+    "fecha_ejecucion": "2026-09-13 16:15:33.181146",
+    "total_notas": 90,
+    "fuente_csv": "/home/kuku/dashAI/Eclipi-entrenamiento/rtfs_entrenamiento_procesado.csv"
+  },
+  "share_of_voice": [
+    {
+      "medio": "portalportuario.cl",
+      "total_notas": 16,
+      "porcentaje": 17.78
+    },
+    {
+      "medio": "mundomaritimo.cl",
+      "total_notas": 14,
+      "porcentaje": 15.56
+    },
+    {
+      "medio": "reporteminero.cl",
+      "total_notas": 13,
+      "porcentaje": 14.44
+    },
+    {
+      "medio": "redimin.cl",
+      "total_notas": 10,
+      "porcentaje": 11.11
+    },
+    {
+      "medio": "portalminero.com",
+      "total_notas": 9,
+      "porcentaje": 10
+    },
+    {
+      "medio": "diarioestrategia.cl",
+      "total_notas": 5,
+      "porcentaje": 5.56
+    },
+    {
+      "medio": "mch.cl",
+      "total_notas": 5,
+      "porcentaje": 5.56
+    },
+    {
+      "medio": "cualestuhuella.cl",
+      "total_notas": 4,
+      "porcentaje": 4.44
+    },
+    {
+      "medio": "nuevamineria.com",
+      "total_notas": 3,
+      "porcentaje": 3.33
+    },
+    {
+      "medio": "diarioconcepcion.cl",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "medio": "guiaminera.cl",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "medio": "maritimoportuario.cl",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "medio": "chilemineria.cl",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "medio": "diariopuertovaras.cl",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "medio": "mineriayfuturo.cl",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "medio": "revistacrisol.cl",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "medio": "sabes.cl",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    }
+  ],
+  "distribucion_taxonomia": [
+    {
+      "taxonomia": "MININT",
+      "total_notas": 7,
+      "porcentaje": 7.78
+    },
+    {
+      "taxonomia": "HGTLA",
+      "total_notas": 6,
+      "porcentaje": 6.67
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "total_notas": 6,
+      "porcentaje": 6.67
+    },
+    {
+      "taxonomia": "BHP",
+      "total_notas": 5,
+      "porcentaje": 5.56
+    },
+    {
+      "taxonomia": "CEN",
+      "total_notas": 4,
+      "porcentaje": 4.44
+    },
+    {
+      "taxonomia": "GF-SG",
+      "total_notas": 3,
+      "porcentaje": 3.33
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "total_notas": 3,
+      "porcentaje": 3.33
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "CMP",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "GF",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "KPMG",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "LOMAS",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "SQM",
+      "total_notas": 2,
+      "porcentaje": 2.22
+    },
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "CEIM",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ESCO",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "H2V",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MBSH",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "NOVAN",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "RSE",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "total_notas": 1,
+      "porcentaje": 1.11
+    }
+  ],
+  "framing_terminos": [
+    {
+      "word": "puerto",
+      "frecuencia": 15
+    },
+    {
+      "word": "cobre",
+      "frecuencia": 12
+    },
+    {
+      "word": "millones",
+      "frecuencia": 12
+    },
+    {
+      "word": "sistema",
+      "frecuencia": 12
+    },
+    {
+      "word": "minera",
+      "frecuencia": 10
+    },
+    {
+      "word": "minería",
+      "frecuencia": 10
+    },
+    {
+      "word": "antofagasta",
+      "frecuencia": 9
+    },
+    {
+      "word": "compañía",
+      "frecuencia": 8
+    },
+    {
+      "word": "oro",
+      "frecuencia": 8
+    },
+    {
+      "word": "producción",
+      "frecuencia": 8
+    },
+    {
+      "word": "desarrollo",
+      "frecuencia": 7
+    },
+    {
+      "word": "operaciones",
+      "frecuencia": 7
+    },
+    {
+      "word": "proyecto",
+      "frecuencia": 7
+    },
+    {
+      "word": "puertos",
+      "frecuencia": 7
+    },
+    {
+      "word": "terminal",
+      "frecuencia": 7
+    },
+    {
+      "word": "arica",
+      "frecuencia": 6
+    },
+    {
+      "word": "codelco",
+      "frecuencia": 6
+    },
+    {
+      "word": "frontal",
+      "frecuencia": 6
+    },
+    {
+      "word": "perú",
+      "frecuencia": 6
+    },
+    {
+      "word": "región",
+      "frecuencia": 6
+    }
+  ],
+  "framing_coocurrencia": [
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "word": "aduanera",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "word": "cadena",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "word": "cambios",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "word": "cámara",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ADUANA-MERCADOSYEMPRESAS",
+      "word": "despacho",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "word": "angamos",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "word": "antofagasta",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "word": "puerto",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "word": "servicio",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ANGAMOS",
+      "word": "conosur",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "word": "mark",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "word": "copper",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "word": "perú",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "word": "american",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ANGLO-MINCHI",
+      "word": "anglo",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "word": "biobío",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "word": "megaincendio",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "word": "investigación",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "word": "plazo",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "ARAUCO",
+      "word": "cuasidelitos",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP",
+      "word": "cobre",
+      "frecuencia": 6
+    },
+    {
+      "taxonomia": "BHP",
+      "word": "activa",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP",
+      "word": "baja",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP",
+      "word": "bhp",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP",
+      "word": "chilena",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "word": "bhp",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "word": "cobre",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "word": "mayor",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "word": "millones",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPEN-CCOLOR",
+      "word": "mundial",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "word": "anterior",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "word": "aunque",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "word": "bhp",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "word": "cartera",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-BHPPN-ESCO-SPÈN-CC",
+      "word": "cobre",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "word": "cayó",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "word": "caídas",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "word": "cierre",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "word": "cobre",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "BHP-ESCO",
+      "word": "conflicto",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "word": "billón",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "word": "ceo",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "word": "civil",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "word": "cámara",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CCM-SQM",
+      "word": "década",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEIM",
+      "word": "acuñador",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEIM",
+      "word": "antofagasta",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEIM",
+      "word": "capacita",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEIM",
+      "word": "ceim",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEIM",
+      "word": "desempeñarse",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CEN",
+      "word": "red",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "CEN",
+      "word": "subestaciones",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "CEN",
+      "word": "almacenamiento",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CEN",
+      "word": "capacidad",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CEN",
+      "word": "coordinador",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CMP",
+      "word": "compañía",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CMP",
+      "word": "expo",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CMP",
+      "word": "industrial",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CMP",
+      "word": "minera",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CMP",
+      "word": "pacífico",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "word": "puertos",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "word": "académico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "word": "columnista",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "word": "copa",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES",
+      "word": "disputaran",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "word": "carlos",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "word": "exterior",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "word": "galdámez",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "word": "juan",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "CONCESIONES (RECUERDA FORMATO DE OPINIONES DE )",
+      "word": "law",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "word": "academia",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "word": "alianza",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "word": "arauco",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "word": "clave",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EDUCTEC-ARAUCO",
+      "word": "conexión",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "word": "trabajadores",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "word": "arica",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "word": "capataces",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "word": "certifica",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDAD-INDUST-REGARICA-SECTORMP",
+      "word": "competencias",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "word": "acercar",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "word": "caex",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "word": "capacitación",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "word": "conocimientos",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEIDNUSTRIA-",
+      "word": "desafíos",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "word": "alta",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "word": "demanda",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "word": "oficios",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "word": "aprendizajes",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "EMPLEABILIDADEINDUST",
+      "word": "capstone",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "word": "bolivia",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "word": "analizará",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "word": "bioceánico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "word": "busca",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ENCTXT(MIN) - INTERNAC",
+      "word": "corredor",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO",
+      "word": "agenda",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO",
+      "word": "antofagasta",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO",
+      "word": "articulación",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO",
+      "word": "autoridades",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO",
+      "word": "capacitación",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "word": "aborda",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "word": "académico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "word": "actividad",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "word": "antofagasta",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-NOVAN-SQMY",
+      "word": "capital",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "word": "empleo",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "word": "académico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "word": "alinear",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "word": "antofagasta",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ESCO-LOMAS-SQMY-NOVAN",
+      "word": "articula",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "GF",
+      "word": "oro",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "GF",
+      "word": "petróleo",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "GF",
+      "word": "plata",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "GF",
+      "word": "cae",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "GF",
+      "word": "escalada",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "GF-SG",
+      "word": "autores",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "GF-SG",
+      "word": "congregará",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "GF-SG",
+      "word": "congreso",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "GF-SG",
+      "word": "cuenta",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "GF-SG",
+      "word": "digital",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "H2V",
+      "word": "aceite",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "H2V",
+      "word": "cocina",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "H2V",
+      "word": "millones",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "H2V",
+      "word": "usado",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "H2V",
+      "word": "anuales",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA",
+      "word": "puerto",
+      "frecuencia": 5
+    },
+    {
+      "taxonomia": "HGTLA",
+      "word": "terminal",
+      "frecuencia": 5
+    },
+    {
+      "taxonomia": "HGTLA",
+      "word": "frigorífico",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "HGTLA",
+      "word": "montt",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "HGTLA",
+      "word": "america",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "word": "puerto",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "word": "antonio",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "word": "atravesando",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "word": "cero",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-ANGAMOS-SECTORMP-SECTORFERROV-REGBBIO",
+      "word": "especial",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "word": "pacífico",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "word": "puertos",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "word": "américa",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "word": "costa",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "HGTLA-HGT-ANGAMOS-SECTORMP",
+      "word": "eficiencia",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "word": "académico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "word": "anticipar",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "word": "conocimiento",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "word": "crecen",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INCENDIOS/INUND",
+      "word": "cuencas",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "word": "darwin",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "word": "ranita",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "word": "universidad",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "word": "alianza",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INDUSYMA",
+      "word": "amenazados",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "word": "alto",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "word": "científica",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "word": "circular",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "word": "contribuye",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INNOV-CLUSTER-NOTISSECTORENERG",
+      "word": "economía",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "word": "américa",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "word": "fortalecer",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "word": "latina",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "word": "operacionales",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "INTERNAC",
+      "word": "servicio",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "KPMG",
+      "word": "auditoría",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "KPMG",
+      "word": "codelco",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "KPMG",
+      "word": "agnic",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "KPMG",
+      "word": "cace",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "KPMG",
+      "word": "comisión",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "LOMAS",
+      "word": "bayas",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "LOMAS",
+      "word": "lomas",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "LOMAS",
+      "word": "sistema",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "LOMAS",
+      "word": "autónoma",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "LOMAS",
+      "word": "autónomo",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MBSH",
+      "word": "capital",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MBSH",
+      "word": "amancio",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MBSH",
+      "word": "bank",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MBSH",
+      "word": "canadá",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MBSH",
+      "word": "cerró",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "word": "abre",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "word": "acciones",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "word": "adopción",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "word": "comunicó",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEDIOAMB(MIN)",
+      "word": "coordina",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "word": "ballenas",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "word": "delfines",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "word": "marinos",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "word": "captura",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MEJILLONES-MEDIOAMBEINNOVACION",
+      "word": "carbono",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "word": "controles",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "word": "fronterizos",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "word": "modernizar",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "word": "bolivia",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MERCYEMP",
+      "word": "comercio",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "word": "frontal",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "word": "sistema",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "word": "trabajadores",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "word": "aislados",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MINCHI-LABORAL",
+      "word": "aislamiento",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MININT",
+      "word": "oro",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "MININT",
+      "word": "onzas",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "MININT",
+      "word": "perú",
+      "frecuencia": 3
+    },
+    {
+      "taxonomia": "MININT",
+      "word": "buque",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MININT",
+      "word": "energía",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "word": "interrupciones",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "word": "alertas",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "word": "andacollo",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "word": "candelaria",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "MLP-ANGLO-MINCHI",
+      "word": "capacidad",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "NOVAN",
+      "word": "basada",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "NOVAN",
+      "word": "bernardo",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "NOVAN",
+      "word": "codelco",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "NOVAN",
+      "word": "compañía",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "NOVAN",
+      "word": "costos",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "word": "américas",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "word": "bozo",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "word": "crisis",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "word": "decano",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN (MIN Y ENER)",
+      "word": "energética",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "word": "universidad",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "word": "académico",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "word": "cimentada",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "word": "condiciones",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "OPINIÓN CEIM",
+      "word": "desarrollado",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "word": "arica",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "word": "asp",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "word": "bolivia",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "word": "carga",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "REGARICA-SECTORMP",
+      "word": "extraportuarios",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "RSE",
+      "word": "apoyar",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "RSE",
+      "word": "autoridades",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "RSE",
+      "word": "colabora",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "RSE",
+      "word": "comunidades",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "RSE",
+      "word": "corproa",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "word": "ana",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "word": "arrastre",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "word": "asistir",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "word": "aysén",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SAAMTOW-SECTROMP",
+      "word": "bahía",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "word": "antonio",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "word": "exterior",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "word": "licitación",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "word": "portuaria",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP",
+      "word": "portuarias",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "word": "arica",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "word": "madera",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "word": "afirmó",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "word": "atrás",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SECTORMP-REGARICA-INDUSTRIAYMA",
+      "word": "boliviana",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "word": "continuidad",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "word": "edyce",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "word": "plan",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "word": "quiebra",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SPEN-CMP",
+      "word": "aprobación",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "SQM",
+      "word": "sqm",
+      "frecuencia": 4
+    },
+    {
+      "taxonomia": "SQM",
+      "word": "ebitda",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SQM",
+      "word": "empresariales",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SQM",
+      "word": "resultados",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "SQM",
+      "word": "wesfarmers",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "word": "bmw",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "word": "bosch",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "word": "colaboran",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "word": "combustible",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "TYTMENCIONES",
+      "word": "combustión",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "word": "portuaria",
+      "frecuencia": 2
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "word": "aprendizaje",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "word": "conjunto",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "word": "contraporchi",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT",
+      "word": "cultura",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "word": "abordando",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "word": "autocuidado",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "word": "cotraporchi",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "word": "cultura",
+      "frecuencia": 1
+    },
+    {
+      "taxonomia": "ULTRAPORT-SECTORMP",
+      "word": "emergencias",
+      "frecuencia": 1
+    }
+  ]
+}

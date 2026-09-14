@@ -1,16 +1,13 @@
-# Sistema y Entorno
-.DS_Store
-.Rhistory
-.RData
-.Ruserdata
+# Salidas de compilación web efímeras
+/docs/
+/.quarto/
+
+# Entornos virtuales y cachés de código
+.venv/
 __pycache__/
-*.pyc
+*.log
+.pytest_cache/
 
-# Quarto
-.quarto/
-
-# Artefactos y reportes temporales en raíz
-briefing_*.html
-briefing_*.md
-metricas_intelpress.json
-*.png
+# Archivos de sistema y temporales
+.DS_Store
+*.tmp

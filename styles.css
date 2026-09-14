@@ -1,0 +1,91 @@
+/* Intelpress Master Stylesheet - Tokyo Night CLI Aesthetic */
+:root {
+  --bg-color: #1a1b26;
+  --bg-darker: #16161e;
+  --card-bg: #24283b;
+  --text-color: #a9b1d6;
+  --text-bright: #ffffff;
+  --accent-blue: #7aa2f7;
+  --cyan-color: #0db9d7;
+  --purple-color: #bb9af7;
+  --border-color: #444b6a;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Overhead */
+.navbar {
+  background-color: var(--bg-darker) !important;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 1.5rem;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--accent-blue) !important;
+  font-family: var(--font-mono);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--cyan-color) !important;
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-bright);
+  font-family: var(--font-mono);
+  border-bottom: none;
+}
+
+h2 {
+  border-left: 4px solid var(--cyan-color);
+  padding-left: 10px;
+  margin-top: 2rem;
+}
+
+/* Links & Code */
+a {
+  color: var(--cyan-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code, pre {
+  background-color: var(--bg-darker);
+  color: var(--purple-color);
+  font-family: var(--font-mono);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Cards & Callouts */
+.card, .callout {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Modeline Style */
+footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
