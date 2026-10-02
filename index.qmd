@@ -1,55 +1,207 @@
 ---
-title: "INTELPRESS"
-subtitle: "Media Intelligence & Data Sovereignty"
+title: "Intelpress"
+pagetitle: "Intelpress — Presencia Inteligente"
+description: "Inteligencia de medios para decisiones que no admiten ruido."
 format:
   html:
     page-layout: full
 ---
 
-::: {.hero-section style="text-align: center; padding: 2rem 0;"}
-# INTELPRESS
-### Media Intelligence & Data Sovereignty
+<div class="hero-2col">
 
-Plataforma de inteligencia aplicada y tecnología de alto rendimiento que cierra la brecha entre el volumen masivo de datos informativos y la toma de decisiones ejecutivas.
-:::
+<div class="hero-content">
+<div class="eyebrow">Presencia Inteligente · Chile</div>
 
-::: {.callout style="background: #24283b; border-left: 4px solid #0db9d7; padding: 1.2rem; font-style: italic; margin: 2rem 0;"}
-"Las herramientas analíticas de alto valor ya no son exclusivas de las grandes corporaciones. Diseñamos pipelines ligeros y precisos para organizaciones que exigen velocidad, rigor editorial e independencia tecnológica."
-:::
+# Inteligencia de medios para decisiones que no admiten ruido.
 
-## Módulos Core
+<div class="lead">
+Monitoreamos, analizamos y anticipamos lo que se dice de tu organización en la prensa chilena. Sin duplicados. Sin ruido. Con confidencialidad garantizada.
+</div>
 
-::: {style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;"}
+<div class="hero-ctas">
+<a href="#newsletter" class="btn-primary">Recibir el análisis semanal</a>
+<a href="contacto.qmd" class="btn-secondary">Solicitar diagnóstico</a>
+</div>
+</div>
 
-::: {.card}
-**01. ENGINE**
-### Media Intelligence & Clipping
-Monitoreo sectorial de prensa con procesamiento paralelo y curaduría de precisión. Síntesis ejecutivas estructuradas y libres de errores (AM/PM).
-:::
+<div class="hero-visual">
+<div class="dashboard-card">
+<div class="dashboard-header">
+<span class="dashboard-label">Share of Voice</span>
+<span class="dashboard-live">● En vivo</span>
+</div>
+<div class="dashboard-meta">Cobertura del 13 de septiembre de 2026 · 90 notas procesadas</div>
 
-::: {.card}
-**02. ANALYTICS**
-### Auditoría Semántica en R
-Análisis riguroso de reputación de marca, encuadre mediático (*framing*) y cuota de voz (*Share of Voice*). Generación de dashboards basados en evidencia dura.
-:::
+<div class="sov-chart">
 
-::: {.card}
-**03. SOVEREIGNTY**
-### Arquitectura PKM & IA Local
-Implementación de sistemas de gestión de conocimiento corporativo (*Local-first AI*). Procesamiento interno de datos sensibles garantizando 100% de privacidad.
-:::
+<div class="sov-row">
+<div class="sov-name">portalportuario.cl</div>
+<div class="sov-bar-wrap"><div class="sov-bar" style="width: 100%"></div></div>
+<div class="sov-value">17.8%</div>
+</div>
 
-::: {.card}
-**04. STRATEGY**
-### Asesoría en Asuntos Públicos
-Mapeo analítico de actores clave, tendencias en la esfera pública y estrategias de comunicación respaldadas por ciencia de datos aplicada.
-:::
+<div class="sov-row">
+<div class="sov-name">mundomaritimo.cl</div>
+<div class="sov-bar-wrap"><div class="sov-bar" style="width: 87.5%"></div></div>
+<div class="sov-value">15.6%</div>
+</div>
 
-:::
+<div class="sov-row">
+<div class="sov-name">reporteminero.cl</div>
+<div class="sov-bar-wrap"><div class="sov-bar" style="width: 81.2%"></div></div>
+<div class="sov-value">14.4%</div>
+</div>
 
-::: {style="text-align: center; margin-top: 3rem; padding: 2rem; background: #16161e; border: 1px dashed #444b6a; border-radius: 6px;"}
-### ¿Listo para solicitar un diagnóstico a la medida?
-Diseñamos pipelines analíticos y arquitecturas de conocimiento adaptadas a la escala de su organización.
+<div class="sov-row">
+<div class="sov-name">redimin.cl</div>
+<div class="sov-bar-wrap"><div class="sov-bar" style="width: 62.5%"></div></div>
+<div class="sov-value">11.1%</div>
+</div>
 
-[Solicitar Diagnóstico](mailto:contacto@intelpress.cl){.btn .btn-primary style="background: #7aa2f7; color: #15161e; font-weight: bold; padding: 0.6rem 1.4rem; text-decoration: none; border-radius: 3px; display: inline-block; margin-top: 1rem;"}
-:::
+<div class="sov-row">
+<div class="sov-name">portalminero.com</div>
+<div class="sov-bar-wrap"><div class="sov-bar" style="width: 56.3%"></div></div>
+<div class="sov-value">10.0%</div>
+</div>
+
+</div>
+
+<div class="dashboard-footer">
+<span>Pipeline Intelpress · Datos actualizados diariamente</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+<div class="section-label">Qué hacemos</div>
+
+## Tres capacidades, un solo pipeline.
+
+<div class="grid-3">
+
+<div class="service-card">
+<div class="service-num">01</div>
+<h3>Monitoreo y Síntesis Diaria</h3>
+<p>Recibes un briefing ejecutivo cada mañana con las noticias que importan, agrupadas por relevancia, sin duplicados, con contexto editorial.</p>
+</div>
+
+<div class="service-card">
+<div class="service-num">02</div>
+<h3>Análisis de Reputación y Tendencias</h3>
+<p>Medimos cómo te cubren los medios, quién gana terreno en la conversación, y hacia dónde se mueve el sentimiento antes de que sea evidente.</p>
+</div>
+
+<div class="service-card">
+<div class="service-num">03</div>
+<h3>Alertas Tempranas</h3>
+<p>Te avisamos cuando el volumen de menciones se dispara o cuando el tono cruza un umbral crítico. Antes de que la crisis escale, no después.</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Cómo funciona</div>
+
+## De la configuración a la entrega.
+
+<div class="grid-2">
+
+<div class="step">
+<div class="step-num">PASO 01</div>
+<h4>Diagnóstico</h4>
+<p>Mapeamos tu ecosistema: entidades, medios que importan, reguladores, comunidades, competidores y actores clave.</p>
+</div>
+
+<div class="step">
+<div class="step-num">PASO 02</div>
+<h4>Configuración</h4>
+<p>Calibramos la taxonomía de monitoreo y las reglas de alerta según tus prioridades y umbrales de tolerancia.</p>
+</div>
+
+<div class="step">
+<div class="step-num">PASO 03</div>
+<h4>Procesamiento</h4>
+<p>Cada nota se clasifica, se le asigna sentimiento hacia entidades y se integra al histórico acumulado.</p>
+</div>
+
+<div class="step">
+<div class="step-num">PASO 04</div>
+<h4>Entrega</h4>
+<p>Briefing diario, dashboard en vivo, alertas en tiempo real y análisis retrospectivo cuando lo necesites.</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<div class="section-label">Sectores</div>
+
+## Nos adaptamos al ecosistema de cada gremio.
+
+El pipeline es el mismo. Lo que cambia es la taxonomía de entidades, los medios relevantes y los triggers de alerta.
+
+<div class="sector-grid">
+
+<a href="sectores/index.qmd#mineria" class="sector-item">
+<span class="sector-name">Minería y Energía</span>
+<span class="sector-desc">Faenas, gremios, comunidades, SMA.</span>
+</a>
+
+<a href="sectores/index.qmd#puertos" class="sector-item">
+<span class="sector-name">Puertos y Logística</span>
+<span class="sector-desc">Terminales, concesionarios, trabajadores portuarios.</span>
+</a>
+
+<a href="sectores/index.qmd#retail" class="sector-item">
+<span class="sector-name">Retail y Consumo</span>
+<span class="sector-desc">Cadenas, SERNAC, consumidores.</span>
+</a>
+
+<a href="sectores/index.qmd#finanzas" class="sector-item">
+<span class="sector-name">Finanzas e Inversiones</span>
+<span class="sector-desc">Bancos, CMF, AFP, fintechs.</span>
+</a>
+
+<a href="sectores/index.qmd#acuicultura" class="sector-item">
+<span class="sector-name">Acuicultura y Pesca</span>
+<span class="sector-desc">Salmoneras, Sernapesca, caletas.</span>
+</a>
+
+<a href="sectores/index.qmd#forestal" class="sector-item">
+<span class="sector-name">Forestal y Agricultura</span>
+<span class="sector-desc">Forestales, CONAF, territorios.</span>
+</a>
+
+<a href="sectores/index.qmd#publico" class="sector-item">
+<span class="sector-name">Sector Público y Política</span>
+<span class="sector-desc">Ministerios, congreso, partidos.</span>
+</a>
+
+<a href="sectores/index.qmd#economia" class="sector-item">
+<span class="sector-name">Economía y Regulación</span>
+<span class="sector-desc">Banco Central, Hacienda, reguladores.</span>
+</a>
+
+</div>
+</div>
+
+<div class="newsletter-cta" id="newsletter">
+<h2>Recibe el análisis semanal.</h2>
+<p>Un correo cada semana con las señales que importan del ecosistema informativo chileno. Sin spam. Cancela cuando quieras.</p>
+
+<form class="newsletter-form" action="https://buttondown.email/api/emails/embed-subscribe/intelpress" method="post" target="_blank">
+<input type="email" name="email" placeholder="tu@correo.cl" required>
+<button type="submit">Suscribirme</button>
+</form>
+
+<p class="small-print">Al suscribirte aceptas recibir un correo semanal. Tus datos no se comparten con terceros.</p>
+</div>
+
+<div class="contact-cta">
+<h3>¿Necesitas monitoreo dedicado para tu organización?</h3>
+<p>Diseñamos pipelines de inteligencia adaptados a tu sector, con alertas calibradas y reportes a medida.</p>
+<p><a href="contacto.qmd" class="btn-primary">Escríbenos</a></p>
+</div>

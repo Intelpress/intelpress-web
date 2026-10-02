@@ -11,3 +11,6 @@ __pycache__/
 # Archivos de sistema y temporales
 .DS_Store
 *.tmp
+
+# Datos crudos (symlink a ~/Intelpress/datos/bronze/)
+data/raw/

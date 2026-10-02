@@ -36,7 +36,9 @@ cargar_datos_prensa <- function(ruta_csv) {
   
   df_clean <- df %>%
     mutate(
-      fecha_parsed = suppressWarnings(ymd_hms(fecha)),
+      fecha_parsed = suppressWarnings(
+        as.Date(substr(coalesce(fecha, ""), 1, 10))
+      ),
       medio = coalesce(medio, "Desconocido"),
       taxonomia = coalesce(taxonomia, "SIN_TAXONOMIA"),
       titulo = coalesce(titulo, ""),

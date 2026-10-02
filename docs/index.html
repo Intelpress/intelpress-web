@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Inteligencia de medios para decisiones que no admiten ruido.">
 
-<title>INTELPRESS – Intelpress</title>
+<title>Intelpress — Presencia Inteligente – Intelpress</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,81 +21,391 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-5276476b5bdb9cfe1f92c505466e0bf3.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-53c77ba575e4f7c3f2c7c6c40fffa11d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-89e16b677cd7d83afdc1af97f12e1cdc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Intelpress</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./servicios/index.html"> 
+<span class="menu-text">Servicios</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sectores/index.html"> 
+<span class="menu-text">Sectores</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./newsletter/index.html"> 
+<span class="menu-text">Newsletter</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tecnologia/index.html"> 
+<span class="menu-text">Tecnología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./metodologia/index.html"> 
+<span class="menu-text">Metodología</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./contacto.html"> 
+<span class="menu-text">Contacto</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Intelpress</h1>
+</div>
+
+<div>
+  <div class="description">
+    Inteligencia de medios para decisiones que no admiten ruido.
+  </div>
+</div>
 
 
-<header id="title-block-header">
-<h1 class="title">INTELPRESS</h1>
-<p class="subtitle">Media Intelligence &amp; Data Sovereignty</p>
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#intelpress" id="toc-intelpress">INTELPRESS</a>
-  <ul>
-  <li><a href="#media-intelligence-data-sovereignty" id="toc-media-intelligence-data-sovereignty">Media Intelligence &amp; Data Sovereignty</a></li>
-  </ul></li>
-  <li><a href="#módulos-core" id="toc-módulos-core">Módulos Core</a>
-  <ul>
-  <li><a href="#listo-para-solicitar-un-diagnóstico-a-la-medida" id="toc-listo-para-solicitar-un-diagnóstico-a-la-medida">¿Listo para solicitar un diagnóstico a la medida?</a></li>
-  </ul></li>
-  </ul>
-</nav>
-<section id="intelpress" class="hero-section" style="text-align: center; padding: 2rem 0;">
-<h1>INTELPRESS</h1>
-<h3 id="media-intelligence-data-sovereignty" class="anchored">Media Intelligence &amp; Data Sovereignty</h3>
-<p>Plataforma de inteligencia aplicada y tecnología de alto rendimiento que cierra la brecha entre el volumen masivo de datos informativos y la toma de decisiones ejecutivas.</p>
+
+<div class="hero-2col">
+<div class="hero-content">
+<div class="eyebrow">
+Presencia Inteligente · Chile
+</div>
+<section id="inteligencia-de-medios-para-decisiones-que-no-admiten-ruido." class="level1">
+<h1>Inteligencia de medios para decisiones que no admiten ruido.</h1>
+<div class="lead">
+<p>Monitoreamos, analizamos y anticipamos lo que se dice de tu organización en la prensa chilena. Sin duplicados. Sin ruido. Con confidencialidad garantizada.</p>
+</div>
+<div class="hero-ctas">
+<p><a href="#newsletter" class="btn-primary">Recibir el análisis semanal</a> <a href="./contacto.html" class="btn-secondary">Solicitar diagnóstico</a></p>
+</div>
 </section>
-<div>
-<blockquote>
-<p><strong>None</strong></p>
-<p>“Las herramientas analíticas de alto valor ya no son exclusivas de las grandes corporaciones. Diseñamos pipelines ligeros y precisos para organizaciones que exigen velocidad, rigor editorial e independencia tecnológica.”</p>
-</blockquote>
 </div>
-<h2 id="módulos-core" class="anchored">Módulos Core</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-<div class="card">
-<p><strong>01. ENGINE</strong> ### Media Intelligence &amp; Clipping Monitoreo sectorial de prensa con procesamiento paralelo y curaduría de precisión. Síntesis ejecutivas estructuradas y libres de errores (AM/PM).</p>
+<div class="hero-visual">
+<div class="dashboard-card">
+<div class="dashboard-header">
+<p><span class="dashboard-label">Share of Voice</span> <span class="dashboard-live">● En vivo</span></p>
 </div>
-<div class="card">
-<p><strong>02. ANALYTICS</strong> ### Auditoría Semántica en R Análisis riguroso de reputación de marca, encuadre mediático (<em>framing</em>) y cuota de voz (<em>Share of Voice</em>). Generación de dashboards basados en evidencia dura.</p>
+<div class="dashboard-meta">
+Cobertura del 13 de septiembre de 2026 · 90 notas procesadas
 </div>
-<div class="card">
-<p><strong>03. SOVEREIGNTY</strong> ### Arquitectura PKM &amp; IA Local Implementación de sistemas de gestión de conocimiento corporativo (<em>Local-first AI</em>). Procesamiento interno de datos sensibles garantizando 100% de privacidad.</p>
+<div class="sov-chart">
+<div class="sov-row">
+<div class="sov-name">
+portalportuario.cl
 </div>
-<div class="card">
-<p><strong>04. STRATEGY</strong> ### Asesoría en Asuntos Públicos Mapeo analítico de actores clave, tendencias en la esfera pública y estrategias de comunicación respaldadas por ciencia de datos aplicada.</p>
+<div class="sov-bar-wrap">
+<div class="sov-bar" style="width: 100%">
+
 </div>
 </div>
-<section id="listo-para-solicitar-un-diagnóstico-a-la-medida" style="text-align: center; margin-top: 3rem; padding: 2rem; background: #16161e; border: 1px dashed #444b6a; border-radius: 6px;">
-<h3 class="anchored">¿Listo para solicitar un diagnóstico a la medida?</h3>
-<p>Diseñamos pipelines analíticos y arquitecturas de conocimiento adaptadas a la escala de su organización.</p>
-<p><a href="mailto:contacto@intelpress.cl" class="btn btn-primary" style="background: #7aa2f7; color: #15161e; font-weight: bold; padding: 0.6rem 1.4rem; text-decoration: none; border-radius: 3px; display: inline-block; margin-top: 1rem;">Solicitar Diagnóstico</a></p>
+<div class="sov-value">
+17.8%
+</div>
+</div>
+<div class="sov-row">
+<div class="sov-name">
+mundomaritimo.cl
+</div>
+<div class="sov-bar-wrap">
+<div class="sov-bar" style="width: 87.5%">
+
+</div>
+</div>
+<div class="sov-value">
+15.6%
+</div>
+</div>
+<div class="sov-row">
+<div class="sov-name">
+reporteminero.cl
+</div>
+<div class="sov-bar-wrap">
+<div class="sov-bar" style="width: 81.2%">
+
+</div>
+</div>
+<div class="sov-value">
+14.4%
+</div>
+</div>
+<div class="sov-row">
+<div class="sov-name">
+redimin.cl
+</div>
+<div class="sov-bar-wrap">
+<div class="sov-bar" style="width: 62.5%">
+
+</div>
+</div>
+<div class="sov-value">
+11.1%
+</div>
+</div>
+<div class="sov-row">
+<div class="sov-name">
+portalminero.com
+</div>
+<div class="sov-bar-wrap">
+<div class="sov-bar" style="width: 56.3%">
+
+</div>
+</div>
+<div class="sov-value">
+10.0%
+</div>
+</div>
+</div>
+<div class="dashboard-footer">
+<p><span>Pipeline Intelpress · Datos actualizados diariamente</span></p>
+</div>
+</div>
+</div>
+</div>
+<section>
+<div class="section-label">
+Qué hacemos
+</div>
+<section id="tres-capacidades-un-solo-pipeline." class="level2">
+<h2 class="anchored" data-anchor-id="tres-capacidades-un-solo-pipeline.">Tres capacidades, un solo pipeline.</h2>
+<div class="grid-3">
+<div class="service-card">
+<div class="service-num">
+01
+</div>
+<h3 class="anchored">
+Monitoreo y Síntesis Diaria
+</h3>
+<p>
+Recibes un briefing ejecutivo cada mañana con las noticias que importan, agrupadas por relevancia, sin duplicados, con contexto editorial.
+</p>
+</div>
+<div class="service-card">
+<div class="service-num">
+02
+</div>
+<h3 class="anchored">
+Análisis de Reputación y Tendencias
+</h3>
+<p>
+Medimos cómo te cubren los medios, quién gana terreno en la conversación, y hacia dónde se mueve el sentimiento antes de que sea evidente.
+</p>
+</div>
+<div class="service-card">
+<div class="service-num">
+03
+</div>
+<h3 class="anchored">
+Alertas Tempranas
+</h3>
+<p>
+Te avisamos cuando el volumen de menciones se dispara o cuando el tono cruza un umbral crítico. Antes de que la crisis escale, no después.
+</p>
+</div>
+</div>
 </section>
+</section>
+<section>
+<div class="section-label">
+Cómo funciona
+</div>
+<section id="de-la-configuración-a-la-entrega." class="level2">
+<h2 class="anchored" data-anchor-id="de-la-configuración-a-la-entrega.">De la configuración a la entrega.</h2>
+<div class="grid-2">
+<div class="step">
+<div class="step-num">
+PASO 01
+</div>
+<h4 class="anchored">
+Diagnóstico
+</h4>
+<p>
+Mapeamos tu ecosistema: entidades, medios que importan, reguladores, comunidades, competidores y actores clave.
+</p>
+</div>
+<div class="step">
+<div class="step-num">
+PASO 02
+</div>
+<h4 class="anchored">
+Configuración
+</h4>
+<p>
+Calibramos la taxonomía de monitoreo y las reglas de alerta según tus prioridades y umbrales de tolerancia.
+</p>
+</div>
+<div class="step">
+<div class="step-num">
+PASO 03
+</div>
+<h4 class="anchored">
+Procesamiento
+</h4>
+<p>
+Cada nota se clasifica, se le asigna sentimiento hacia entidades y se integra al histórico acumulado.
+</p>
+</div>
+<div class="step">
+<div class="step-num">
+PASO 04
+</div>
+<h4 class="anchored">
+Entrega
+</h4>
+<p>
+Briefing diario, dashboard en vivo, alertas en tiempo real y análisis retrospectivo cuando lo necesites.
+</p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<div class="section-label">
+Sectores
+</div>
+<section id="nos-adaptamos-al-ecosistema-de-cada-gremio." class="level2">
+<h2 class="anchored" data-anchor-id="nos-adaptamos-al-ecosistema-de-cada-gremio.">Nos adaptamos al ecosistema de cada gremio.</h2>
+<p>El pipeline es el mismo. Lo que cambia es la taxonomía de entidades, los medios relevantes y los triggers de alerta.</p>
+<div class="sector-grid">
+<p><a href="./sectores/index.html#mineria" class="sector-item"> <span class="sector-name">Minería y Energía</span> <span class="sector-desc">Faenas, gremios, comunidades, SMA.</span> </a></p>
+<p><a href="./sectores/index.html#puertos" class="sector-item"> <span class="sector-name">Puertos y Logística</span> <span class="sector-desc">Terminales, concesionarios, trabajadores portuarios.</span> </a></p>
+<p><a href="./sectores/index.html#retail" class="sector-item"> <span class="sector-name">Retail y Consumo</span> <span class="sector-desc">Cadenas, SERNAC, consumidores.</span> </a></p>
+<p><a href="./sectores/index.html#finanzas" class="sector-item"> <span class="sector-name">Finanzas e Inversiones</span> <span class="sector-desc">Bancos, CMF, AFP, fintechs.</span> </a></p>
+<p><a href="./sectores/index.html#acuicultura" class="sector-item"> <span class="sector-name">Acuicultura y Pesca</span> <span class="sector-desc">Salmoneras, Sernapesca, caletas.</span> </a></p>
+<p><a href="./sectores/index.html#forestal" class="sector-item"> <span class="sector-name">Forestal y Agricultura</span> <span class="sector-desc">Forestales, CONAF, territorios.</span> </a></p>
+<p><a href="./sectores/index.html#publico" class="sector-item"> <span class="sector-name">Sector Público y Política</span> <span class="sector-desc">Ministerios, congreso, partidos.</span> </a></p>
+<p><a href="./sectores/index.html#economia" class="sector-item"> <span class="sector-name">Economía y Regulación</span> <span class="sector-desc">Banco Central, Hacienda, reguladores.</span> </a></p>
+</div>
+</section>
+</section>
+<div id="newsletter" class="newsletter-cta">
+<h2 class="anchored">
+Recibe el análisis semanal.
+</h2>
+<p>
+Un correo cada semana con las señales que importan del ecosistema informativo chileno. Sin spam. Cancela cuando quieras.
+</p>
+<form class="newsletter-form" action="https://buttondown.email/api/emails/embed-subscribe/intelpress" method="post" target="_blank">
+<input type="email" name="email" placeholder="tu@correo.cl" required=""> <button type="submit">Suscribirme</button>
+</form>
+<p class="small-print">
+Al suscribirte aceptas recibir un correo semanal. Tus datos no se comparten con terceros.
+</p>
+</div>
+<div class="contact-cta">
+<h3 class="anchored">
+¿Necesitas monitoreo dedicado para tu organización?
+</h3>
+<p>
+Diseñamos pipelines de inteligencia adaptados a tu sector, con alertas calibradas y reportes a medida.
+</p>
+<p>
+<a href="./contacto.html" class="btn-primary">Escríbenos</a>
+</p>
+</div>
 
 
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -115,10 +426,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-  tabsets.forEach(function(tabset) {
-    const tabby = new Tabby('#' + tabset.id);
-  });
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -203,6 +654,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -216,7 +672,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       },
       interactive: true,
       interactiveBorder: 10,
-      theme: 'light-border',
+      theme: 'quarto',
       placement: 'bottom-start',
     };
     if (contentFn) {
@@ -516,6 +972,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+</div> <!-- /content -->
 
 
 
