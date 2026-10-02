@@ -14,3 +14,8 @@ __pycache__/
 
 # Datos crudos (symlink a ~/Intelpress/datos/bronze/)
 data/raw/
+
+# Outputs del pipeline (regenerables con run_pipeline.R)
+data/processed/*.json
+output/plots/*.png
+output/reports/*.md
