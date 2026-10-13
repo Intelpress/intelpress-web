@@ -1,5 +1,4 @@
 # Salidas de compilación web efímeras
-/docs/
 /.quarto/
 
 # Entornos virtuales y cachés de código
@@ -19,3 +18,4 @@ data/raw/
 data/processed/*.json
 output/plots/*.png
 output/reports/*.md
+data/processed/*.csv
