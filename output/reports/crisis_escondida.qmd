@@ -1,0 +1,67 @@
+---
+title: "Accidente fatal en Minera Escondida"
+subtitle: "Anatomía de una crisis: 23 al 25 de septiembre de 2026"
+description: "Análisis de cobertura mediática de 17 notas en 10 medios sobre el accidente fatal en la faena de BHP."
+author: "Intelpress · Presencia Inteligente"
+date: "2026-10-02"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+## Resumen ejecutivo
+
+El **23 de septiembre de 2026**, un trabajador de Minera Escondida —la mayor operación cuprífera del mundo, operada por BHP en la Región de Antofagasta— falleció durante labores de mantención. La compañía suspendió operaciones en el área mina, Sernageomin inició una investigación, y el Sindicato N°2 —que ya estaba en negociación colectiva— profundizó su llamado a huelga.
+
+En **72 horas**, el evento generó **17 notas en 10 medios** con **4 ángulos editoriales** distintos. Este dashboard reconstruye la anatomía de esa cobertura.
+
+## Evolución temporal
+
+![](../plots/crisis_timeline.png)
+
+El **día 1 (23-sep)** concentra el **59% de la cobertura** (10 notas). En las siguientes 48 horas, el volumen cae drásticamente: 5 notas el día 2, 2 el día 3. Es el patrón típico de una crisis de seguridad: **pico inmediato, decaimiento rápido** cuando no hay nuevos hechos.
+
+## Medios que cubrieron
+
+![](../plots/crisis_medios.png)
+
+| Observación | Dato |
+|---|---|
+| Medios únicos | 10 |
+| Medio más activo | redimin.cl (4 notas) |
+| Medios mineros especializados | 8 de 10 |
+| Medios generalistas | 2 (canal9.cl, diarioestrategia.cl) |
+
+La cobertura fue **mayoritariamente sectorial**. Los medios mineros especializados hicieron seguimiento continuo. Los generalistas cubrieron solo el hecho inicial.
+
+## Ángulos editoriales
+
+![](../plots/crisis_angulos.png)
+
+El evento se enmarcó principalmente desde **dos ángulos**:
+
+- **Regulatorio (8 notas, 47%)**: el rol de Sernageomin, la investigación en curso, la fiscalización.
+- **Sindical (7 notas, 41%)**: la reacción del Sindicato N°2, el cuestionamiento a la gestión de BHP, la negociación colectiva en paralelo.
+
+Es notable que el ángulo **Paralización** (el hecho operacional concreto) solo tenga **1 nota**. La cobertura se orientó rápidamente hacia las **consecuencias institucionales y laborales**.
+
+## Lectura estratégica
+
+**Para BHP / Escondida:**
+
+1. La cobertura se concentró en **regulatorio y sindical**, no en la operación.
+2. El Sindicato N°2 logró **vincular el accidente con su agenda de negociación colectiva** en curso.
+3. La caída rápida del volumen sugiere un **pico agudo** sin crisis reputacional sostenida.
+
+**Para un observador del sector:**
+
+1. Los **medios especializados son el termómetro real**.
+2. El **ángulo regulatorio** (Sernageomin) dominó la narrativa.
+3. El evento de Escondida, combinado con el de Radomiro Tomic 8 días después, sugiere una **crisis sectorial de seguridad**.
+
+---
+
+**Metodología**: Análisis construido con el pipeline Intelpress. Las 17 notas provienen de la capa Bronze del Mini Lakehouse, filtradas por menciones a Escondida y clasificadas por ángulo mediante reglas léxicas priorizadas.
+
+**Cobertura**: 10 medios chilenos (8 especializados en minería, 2 generalistas). Período: 23-25 de septiembre de 2026.
